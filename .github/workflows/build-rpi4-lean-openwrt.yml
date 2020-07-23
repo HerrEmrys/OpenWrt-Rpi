@@ -19,8 +19,8 @@ on:
       - 'config/lean/rpi4-lean-openwrt.config'
   schedule:
     - cron: 0 18 * * *
-#  watch:
-#    types: started
+  watch:
+    types: started
 
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
@@ -28,7 +28,7 @@ env:
   CONFIG_FILE: config/lean/rpi4-lean-openwrt.config
   DEVICE: openwrt-bcm27xx-bcm2711-rpi-4
   DIY_SH: scripts/lean-openwrt.sh
-  SSH_ACTIONS: false
+  SSH_ACTIONS: true
   KMODS_IN_FIRMWARE: true
   UPLOAD_EXT4_IMAGES: true
   UPLOAD_SQUASHFS_IMAGES: true
